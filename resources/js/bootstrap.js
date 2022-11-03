@@ -35,3 +35,5 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 import jquery from 'jquery';
 window.$ = jquery;
+
+import anime from 'animejs/lib/anime.es.js';
