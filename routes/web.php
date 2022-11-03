@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PokedexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('index');
 });
+
+Route::get('/home', [HomeController::class, 'index'])->name('index');
+
+Route::get('/pokedex', [PokedexController::class, 'index'])->name('pokedex.index');
