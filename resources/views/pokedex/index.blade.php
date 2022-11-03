@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="test">
 
+    </div>
 @endsection
 
 @section('scripts')
-    <script src="{{asset('js/pokedex/index.js')}}"></script>
-    <script src="{{asset('js/pokedex/main.js')}}"></script>
+    @vite('resources/js/pokedex/index.js')
+    @vite('resources/js/pokedex/main.js')
 @endsection
